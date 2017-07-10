@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>动态数据绑定（一）</title>
+		<script src="js/index.js"></script>
+		<script>
+			//let:申明一个块级作用域的本地变量。
+			let app1 = new Observer({
+				name:'yumi',
+				age:16
+			});
+			let app2 = new Observer({
+				university:'hr',
+				major:'computer'
+			});
+			
+		</script>
+	</head>
+	<body>
+		动态数据绑定（一）
+		<p>要实现的效果：</p>
+		<p>
+			app1.data.name // 你访问了 name
+		</p>
+		<p>
+			app1.data.age = 100;  // 你设置了 age，新的值为100
+		</p>
+        <p>
+        	app2.data.university // 你访问了 university
+        </p>
+        <p>
+        	app2.data.major = 'science'  // 你设置了 major，新的值为 science
+        </p>
+        <p>	参考 http://www.cnblogs.com/weiqu/p/5860945.html</p>
+	</body>
+</html>
